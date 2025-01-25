@@ -689,6 +689,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &261068081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 631407039461471274, guid: 19e8b63bf6daa154b8e5ebb1d87bf542, type: 3}
+  m_PrefabInstance: {fileID: 1437564043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &288832073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,10 +4527,22 @@ MonoBehaviour:
     GameObject: {fileID: 396608387}
     Ordinal: 0
     Priority: 0
-    IconType: 1000
+    IconType: 104500
     IconTexture: {fileID: 0}
-    IsIconRecursive: 1
-    BackgroundType: 0
+    IsIconRecursive: 0
+    BackgroundType: 4000
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 1
+    IsHidden: 0
+  - Type: 0
+    Name: 
+    GameObject: {fileID: 261068081}
+    Ordinal: 1
+    Priority: 0
+    IconType: 290000
+    IconTexture: {fileID: 0}
+    IsIconRecursive: 0
+    BackgroundType: 4000
     BackgroundTexture: {fileID: 0}
     IsBackgroundRecursive: 0
     IsHidden: 0
