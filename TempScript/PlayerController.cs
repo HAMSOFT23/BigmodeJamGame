@@ -55,12 +55,14 @@ public class PlayerController : MaxyGames.UNode.RuntimeBehaviour {
 	public void ControllerMove() {
 		_moveHorizontal = _rewiredPlayer.GetAxisRaw(0);
 		_moveVertical = _rewiredPlayer.GetAxisRaw(3);
-		_movementDirection = (_moveVertical * _playerTransform.forward + _moveHorizontal * _playerTransform.right + _verticalVelocity * Vector3.up).normalized;
+		_movementDirection = (_moveVertical * _playerTransform.forward + _moveHorizontal * _playerTransform.right).normalized;
 		if(_rewiredPlayer.GetButtonDown(4) && _isGrounded) {
 			_verticalVelocity = Mathf.Sqrt(_jumpHeight * -2F * _gravity);
 		}
 		_verticalVelocity += _gravity * Time.deltaTime;
-		_charController.Move(Time.deltaTime * _movementDirection * _movementSpeed);
+		_move = _movementSpeed * _movementDirection;
+		_move.y = _verticalVelocity;
+		_charController.Move(_move * Time.deltaTime);
 	}
 }
 
