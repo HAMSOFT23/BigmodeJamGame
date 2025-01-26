@@ -8136,6 +8136,7 @@ GameObject:
   - component: {fileID: 1717873904}
   - component: {fileID: 1717873903}
   - component: {fileID: 1717873902}
+  - component: {fileID: 1717873906}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -8244,6 +8245,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717873900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1717873906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717873900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd9122f0dbd5a24996fcae351e574b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1784179757
 GameObject:
   m_ObjectHideFlags: 0
@@ -8254,6 +8267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784179759}
   - component: {fileID: 1784179758}
+  - component: {fileID: 1784179760}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -8293,6 +8307,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784179760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784179757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d6499a6bd256e47b859377446493a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  fadeRadius: 0
+  priority: 0
+  customPasses:
+  - rid: 4013956917904015432
+  injectionPoint: 1
+  m_TargetCamera: {fileID: 0}
+  useTargetCamera: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4013956917904015432
+      type: {class: OutlinePass, ns: Modules.Rendering.Outline, asm: Assembly-CSharp-firstpass}
+      data:
+        m_Name: Custom Pass
+        enabled: 1
+        targetColorBuffer: 0
+        targetDepthBuffer: 0
+        clearFlags: 0
+        passFoldout: 0
+        m_Version: 0
+        OutlineLayer:
+          serializedVersion: 2
+          m_Bits: 0
+        OutlineColor: {r: 0, g: 0.9286411, b: 1, a: 1}
+        Threshold: 1
+        Thickness: 1
+        OutlineIntensity: 1
+        OutlineShader: {fileID: 4800000, guid: 7da18a75fcd840745b07c129e2c9b721, type: 3}
 --- !u!1 &1792839975
 GameObject:
   m_ObjectHideFlags: 0
