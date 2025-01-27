@@ -9149,16 +9149,16 @@ MonoBehaviour:
         Data: UnityEngine.Rect, UnityEngine.CoreModule
       - Name: 
         Entry: 4
-        Data: -118
+        Data: -50
       - Name: 
         Entry: 4
-        Data: 311
+        Data: 0
       - Name: 
         Entry: 4
-        Data: 272
+        Data: NaN
       - Name: 
         Entry: 4
-        Data: 119
+        Data: NaN
       - Name: 
         Entry: 8
         Data: 
